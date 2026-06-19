@@ -35,6 +35,11 @@ const team = [
     bio: "Nalla Venkat is the founder of Work Wizards Innovations and the visionary behind the company's mission and long-term strategy. He leads the organization by defining its direction, identifying new opportunities, and driving innovation across all projects. Venkat focuses on building strong partnerships, guiding the development of new technologies, and ensuring that the company continuously evolves to meet future industry demands.",
     image: venkat,
     socials: ["linkedin", "instagram", "web"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/nallavenkat/",
+      instagram: "https://www.instagram.com/venkatnalla_7/",
+      web: "https://venkatnalla.in",
+    },
   },
   {
     name: "Santhosh Boppudi",
@@ -42,6 +47,11 @@ const team = [
     bio: "Santhosh Boppudi leads the technological development at Work Wizards Innovations. As CTO, he is responsible for designing the company's technical architecture, overseeing software development, and ensuring that the products are built using efficient and scalable technologies. He plays a key role in transforming ideas into functional digital platforms and maintaining the technological backbone of the organization.",
     image: santhosh,
     socials: ["linkedin", "instagram", "web"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/santhoshboppudi/",
+      instagram: "https://www.instagram.com/boppudi.wwi/",
+      web: "https://santhoshboppudi.in",
+    },
   },
   {
     name: "Govinda Sai Ram Thammisetty",
@@ -49,6 +59,10 @@ const team = [
     bio: "Govinda Sai Ram Thammisetty manages the operational structure of the company. As COO, he ensures that projects are executed efficiently and that team coordination remains smooth across all activities. He focuses on operational planning, resource management, and maintaining the workflow required to deliver successful products and services.",
     image: govinda,
     socials: ["linkedin", "instagram"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/govinda-sai-ram/",
+      instagram: "https://www.instagram.com/ram.wwi/",
+    },
   },
   {
     name: "Charan Teja Rajanala",
@@ -56,6 +70,10 @@ const team = [
     bio: "Charan Teja Rajanala is responsible for the marketing strategy and brand development of Work Wizards Innovations. As CMO, he focuses on promoting the company's products, expanding market reach, and building a strong brand presence. His work involves digital marketing strategies, partnership outreach, and ensuring that the company's innovations reach the right audience.",
     image: charan,
     socials: ["linkedin", "instagram"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/rajanalacharanteja/",
+      instagram: "https://www.instagram.com/charan.wwi/",
+    },
   },
   {
     name: "Prudhvi Duvvu",
@@ -63,6 +81,10 @@ const team = [
     bio: "Prudhvi Duvvu oversees the financial planning and management of Work Wizards Innovations. As CFO, he is responsible for managing financial resources, budgeting, and ensuring sustainable financial growth. He plays an important role in maintaining financial stability while supporting the company's expansion and long-term business strategy.",
     image: prudhvi,
     socials: ["linkedin", "instagram"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/prudhviduvvu/",
+      instagram: "https://www.instagram.com/prudhvi.wwi/",
+    },
   },
 ];
 
@@ -122,10 +144,10 @@ function AboutPage() {
                     <div className="text-sm font-medium text-muted-foreground mt-1">{m.role}</div>
                     <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{m.bio}</p>
                     <div className="mt-5 flex gap-2">
-                      {m.socials.includes("linkedin") && (
+                      {m.links?.linkedin && (
                         <a
                           aria-label="LinkedIn"
-                          href="https://linkedin.com"
+                          href={m.links.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-9 h-9 grid place-items-center rounded-full bg-secondary hover:bg-foreground hover:text-background transition"
@@ -133,10 +155,10 @@ function AboutPage() {
                           <Linkedin className="w-4 h-4" />
                         </a>
                       )}
-                      {m.socials.includes("instagram") && (
+                      {m.links?.instagram && (
                         <a
                           aria-label="Instagram"
-                          href="https://instagram.com"
+                          href={m.links.instagram}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-9 h-9 grid place-items-center rounded-full bg-secondary hover:bg-foreground hover:text-background transition"
@@ -144,10 +166,10 @@ function AboutPage() {
                           <Instagram className="w-4 h-4" />
                         </a>
                       )}
-                      {m.socials.includes("web") && (
+                      {m.links?.web && (
                         <a
                           aria-label="Website"
-                          href="https://wwi.org.in"
+                          href={m.links.web}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-9 h-9 grid place-items-center rounded-full bg-secondary hover:bg-foreground hover:text-background transition"
