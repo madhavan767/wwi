@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Linkedin, Instagram, Mail, Phone } from "lucide-react";
+import logo from "../assets/logo.svg";
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-2 font-semibold">
-            <span className="inline-grid place-items-center w-7 h-7 rounded-md bg-primary text-primary-foreground text-xs font-bold">
-              W
-            </span>
+            <img src={logo} alt="Work Wizards Innovations" className="w-7 h-7" />
             <span>Work Wizards Innovations</span>
           </Link>
           <p className="text-sm text-muted-foreground mt-3">Innovating Web, Apps &amp; Beyond.</p>
@@ -125,7 +124,7 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-5 text-xs text-muted-foreground flex flex-wrap justify-between gap-3">
           <span>
-            © {new Date().getFullYear()} Work Wizards Innovations Pvt Ltd. All rights reserved.
+            © {new Date().getFullYear()} Work Wizards Innovations PVT. LTD. All rights reserved.
           </span>
           <span>Innovating Web, Apps &amp; Beyond</span>
         </div>

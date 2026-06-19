@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Work Wizards Innovations | Innovating Web, Apps & AI" },
+      { title: "Work Wizards Innovations PVT. LTD. | Innovating Web, Apps & AI" },
       {
         name: "description",
         content:
-          "Work Wizards Innovations Pvt Ltd crafts scalable websites, mobile apps, and AI-driven digital experiences for growth-minded brands.",
+          "Work Wizards Innovations PVT. LTD. crafts scalable websites, mobile apps, and AI-driven digital experiences for growth-minded brands.",
       },
       { property: "og:title", content: "Work Wizards Innovations | Innovating Web, Apps & AI" },
       {
@@ -85,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "A digital studio building fast websites, native apps, and AI-powered products for modern businesses.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Work Wizards Innovations" },
+      { property: "og:site_name", content: "Work Wizards Innovations PVT. LTD." },
       { property: "og:image", content: "https://wwi.org.in/favicon.svg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Work Wizards Innovations | Innovating Web, Apps & AI" },
@@ -100,8 +100,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "web development, app development, AI software, digital agency, startup technology, India, Work Wizards Innovations",
       },
-      { name: "author", content: "Work Wizards Innovations Pvt Ltd" },
-      { name: "publisher", content: "Work Wizards Innovations" },
+      { name: "author", content: "Work Wizards Innovations PVT. LTD." },
+      { name: "publisher", content: "Work Wizards Innovations PVT. LTD." },
       { name: "robots", content: "index, follow" },
       {
         httpEquiv: "Content-Security-Policy",
