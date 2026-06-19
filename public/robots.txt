@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /vks/
+Disallow: /vks/dashboard/
+Sitemap: https://wwi.org.in/sitemap.xml

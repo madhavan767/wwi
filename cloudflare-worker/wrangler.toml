@@ -1,0 +1,37 @@
+name = "wwi-careers-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Frontend origins allowed by CORS (comma separated)
+[vars]
+ALLOWED_ORIGINS = "https://wwi.org.in,https://www.wwi.org.in,https://c.wwi.org.in,http://localhost:8080,http://localhost:5173,http://localhost:5174"
+ADMIN_TOKEN = "WWI_ADMIN_2026_xJ83jdK92jd8K2js"
+R2_PUBLIC_URL = "https://pub-f57f63ca3e3e45f6b2151ce060431fb2.r2.dev"
+
+# ---- D1 ----
+# Run: wrangler d1 create wwi_careers   then paste database_id below
+[[d1_databases]]
+binding = "DB"
+database_name = "wwi-applications"
+database_id = "f2c8759e-d108-4996-8685-f75e89f1676c"
+migrations_dir = "migrations"
+
+# ---- R2 ----
+# Run: wrangler r2 bucket create wwi-careers-resumes
+[[r2_buckets]]
+binding = "RESUMES"
+bucket_name = "wwi-resumes"
+
+# ---- KV (sessions / settings cache) ----
+# Run: wrangler kv namespace create WWI_KV   then paste id below
+[[kv_namespaces]]
+binding = "KV"
+id = "1d98251e535440d0a4c91b7f073236ad"
+
+# Admin token for write endpoints (set via: wrangler secret put ADMIN_TOKEN)
+# Required secrets:
+#   ADMIN_TOKEN  – bearer token expected on write endpoints
+
+# Custom domain is wired in Cloudflare dashboard (Workers & Pages → Domains).
+# c.wwi.org.in is already attached to this worker.
