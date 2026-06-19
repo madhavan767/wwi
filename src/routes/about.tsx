@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/Reveal";
 import { Linkedin, Instagram, Globe, Calendar, Rocket, Users, Handshake } from "lucide-react";
-import venkat from "../assets/venkat.jpg";
-import santhosh from "../assets/santhosh.svg";
-import govinda from "../assets/govinda.svg";
-import charan from "../assets/charan.svg";
-import prudhvi from "../assets/prudhvi.svg";
+import venkat from "../assets/Venkat Nalla - Founder and CEO of Work Wizards Innovations PVT LTD.jpg";
+import santhosh from "../assets/Santhosh Boppudi CTO.jpg";
+import govinda from "../assets/Govinda sai ram COO.jpg";
+import charan from "../assets/Charan Teja Rajanala MD.jpg";
+import prudhvi from "../assets/Duvvu Prudhvi CFO.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
