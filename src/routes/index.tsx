@@ -330,8 +330,6 @@ function Home() {
             </div>
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-2xl mx-auto pt-10 border-t border-background/15">
               {[
-                ["100+", "Projects Delivered"],
-                ["50+", "Happy Clients"],
                 ["24/7", "Support Available"],
               ].map(([n, l]) => (
                 <div key={l}>
